@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height:100vh;
+}
+span{
+    position: absolute;
+    background-size: cover;
+    top: 50%;
+    left:50%;
+    pointer-events:none;
+    color:red;
+    transform: translate(-50%,-50%);
+    animation: animate 2s linear;
+    opacity: 1;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:1;
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity:0;
+        filter: hue-rotate(720deg);
+    }
+}
